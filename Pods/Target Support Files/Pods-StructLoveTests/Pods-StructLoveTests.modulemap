@@ -1,0 +1,6 @@
+framework module Pods_StructLoveTests {
+  umbrella header "Pods-StructLoveTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

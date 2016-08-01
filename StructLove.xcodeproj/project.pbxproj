@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04666E6504C2E8536F0203F1 /* Pods_StructLove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DB454681F19BC0B6D2E9C8 /* Pods_StructLove.framework */; };
 		5BB0BD471D4FC02E0054120F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD461D4FC02E0054120F /* AppDelegate.swift */; };
 		5BB0BD491D4FC02E0054120F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD481D4FC02E0054120F /* ViewController.swift */; };
 		5BB0BD4C1D4FC02E0054120F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0BD4A1D4FC02E0054120F /* Main.storyboard */; };
 		5BB0BD4E1D4FC02E0054120F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0BD4D1D4FC02E0054120F /* Assets.xcassets */; };
 		5BB0BD511D4FC02E0054120F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0BD4F1D4FC02E0054120F /* LaunchScreen.storyboard */; };
 		5BB0BD5C1D4FC02E0054120F /* StructLoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD5B1D4FC02E0054120F /* StructLoveTests.swift */; };
+		AE1703B9A29ECF6AEB0BD9F3 /* Pods_StructLoveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E6C7237B2D98CBE78F9D60 /* Pods_StructLoveTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		319E2A77441664AD80410C6D /* Pods-StructLove.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StructLove.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StructLove/Pods-StructLove.debug.xcconfig"; sourceTree = "<group>"; };
 		5BB0BD431D4FC02E0054120F /* StructLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StructLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB0BD461D4FC02E0054120F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB0BD481D4FC02E0054120F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		5BB0BD571D4FC02E0054120F /* StructLoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StructLoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB0BD5B1D4FC02E0054120F /* StructLoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructLoveTests.swift; sourceTree = "<group>"; };
 		5BB0BD5D1D4FC02E0054120F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F098CC58878A703384808BD /* Pods-StructLove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StructLove.release.xcconfig"; path = "Pods/Target Support Files/Pods-StructLove/Pods-StructLove.release.xcconfig"; sourceTree = "<group>"; };
+		87E6C7237B2D98CBE78F9D60 /* Pods_StructLoveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StructLoveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A56045F0012FFD8AF7FB3D6 /* Pods-StructLoveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StructLoveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StructLoveTests/Pods-StructLoveTests.release.xcconfig"; sourceTree = "<group>"; };
+		A52F7D6BFC934FFB2BF13C2D /* Pods-StructLoveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StructLoveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StructLoveTests/Pods-StructLoveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5DB454681F19BC0B6D2E9C8 /* Pods_StructLove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StructLove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04666E6504C2E8536F0203F1 /* Pods_StructLove.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE1703B9A29ECF6AEB0BD9F3 /* Pods_StructLoveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33C21905EECCD75FC666B09D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				319E2A77441664AD80410C6D /* Pods-StructLove.debug.xcconfig */,
+				5F098CC58878A703384808BD /* Pods-StructLove.release.xcconfig */,
+				A52F7D6BFC934FFB2BF13C2D /* Pods-StructLoveTests.debug.xcconfig */,
+				8A56045F0012FFD8AF7FB3D6 /* Pods-StructLoveTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5BB0BD3A1D4FC02E0054120F = {
 			isa = PBXGroup;
 			children = (
 				5BB0BD451D4FC02E0054120F /* StructLove */,
 				5BB0BD5A1D4FC02E0054120F /* StructLoveTests */,
 				5BB0BD441D4FC02E0054120F /* Products */,
+				33C21905EECCD75FC666B09D /* Pods */,
+				8A7B1620C2194C767E0EC026 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +119,15 @@
 			path = StructLoveTests;
 			sourceTree = "<group>";
 		};
+		8A7B1620C2194C767E0EC026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5DB454681F19BC0B6D2E9C8 /* Pods_StructLove.framework */,
+				87E6C7237B2D98CBE78F9D60 /* Pods_StructLoveTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BB0BD601D4FC02E0054120F /* Build configuration list for PBXNativeTarget "StructLove" */;
 			buildPhases = (
+				7BC9B82C9134B37537BC4B79 /* [CP] Check Pods Manifest.lock */,
 				5BB0BD3F1D4FC02E0054120F /* Sources */,
 				5BB0BD401D4FC02E0054120F /* Frameworks */,
 				5BB0BD411D4FC02E0054120F /* Resources */,
+				A752FD190C3E3B6382D79A98 /* [CP] Embed Pods Frameworks */,
+				FAE35FD4BB9B4CAE20FFDB7C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BB0BD631D4FC02E0054120F /* Build configuration list for PBXNativeTarget "StructLoveTests" */;
 			buildPhases = (
+				6D35AD25CC6A271DE73AADB0 /* [CP] Check Pods Manifest.lock */,
 				5BB0BD531D4FC02E0054120F /* Sources */,
 				5BB0BD541D4FC02E0054120F /* Frameworks */,
 				5BB0BD551D4FC02E0054120F /* Resources */,
+				6AFA4460A821AE48C7008EFA /* [CP] Embed Pods Frameworks */,
+				44DF91D98647C5FB89C1B2BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +229,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44DF91D98647C5FB89C1B2BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StructLoveTests/Pods-StructLoveTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AFA4460A821AE48C7008EFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StructLoveTests/Pods-StructLoveTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D35AD25CC6A271DE73AADB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7BC9B82C9134B37537BC4B79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A752FD190C3E3B6382D79A98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StructLove/Pods-StructLove-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAE35FD4BB9B4CAE20FFDB7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StructLove/Pods-StructLove-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BB0BD3F1D4FC02E0054120F /* Sources */ = {
@@ -325,6 +456,7 @@
 		};
 		5BB0BD611D4FC02E0054120F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319E2A77441664AD80410C6D /* Pods-StructLove.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StructLove/Info.plist;
@@ -336,6 +468,7 @@
 		};
 		5BB0BD621D4FC02E0054120F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F098CC58878A703384808BD /* Pods-StructLove.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = StructLove/Info.plist;
@@ -347,6 +480,7 @@
 		};
 		5BB0BD641D4FC02E0054120F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A52F7D6BFC934FFB2BF13C2D /* Pods-StructLoveTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = StructLoveTests/Info.plist;
@@ -359,6 +493,7 @@
 		};
 		5BB0BD651D4FC02E0054120F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A56045F0012FFD8AF7FB3D6 /* Pods-StructLoveTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = StructLoveTests/Info.plist;
@@ -388,6 +523,7 @@
 				5BB0BD621D4FC02E0054120F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BB0BD631D4FC02E0054120F /* Build configuration list for PBXNativeTarget "StructLoveTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +532,7 @@
 				5BB0BD651D4FC02E0054120F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
