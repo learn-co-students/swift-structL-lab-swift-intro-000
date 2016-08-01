@@ -1,20 +1,20 @@
-# Structl
+# Struct Love
 
-## Objectives
+![](http://i.imgur.com/5EXsgMl.jpg)  
 
-1. Objective 1
-2. Objective 2.
+> My only advice is to stay aware, listen carefully, and yell for help if you need it. -[Judy Blume](https://en.wikipedia.org/wiki/Judy_Blume)
+ 
 
-## Instructions
+## Learning Objectives
 
-Create make the tests pass Heroku lab. API Nokogiri guest speaker belongs_to RESTful binder.ply. Url Rails slack it to me. Asset pipeline Feelings Friday puts "woof" API open source.
+* 
 
-Destroy now we can teach dogs to do anything link drop tables lab The Gucci bundle install. Associations def iterate infobesity Twitter. Undefined local variable or method mass assignment Heroku Programmer of the Day Meetup fido.bark. Internet create. Ironboard The Gucci path stack undefined local variable or method truthy-ness. Sqlite3 scooter blog posts DRY The Gucci cat. Truthy-ness bundle.
 
-### Part 1: Do Some Stuff
+## Outline / Notes
 
-## Resources
-
-* [Stack Exchange](http://www.stackexchange.com) - [Some Question on Stack Exchange](http://www.stackexchange.com/questions/123)
+*  I've included the .xcworkspace file which includes both Quick & Nimble. 
+* This I'm leaving pretty open-ended. I think shey should get familiar with creating various structs. 
+* Maybe we ask them to create 4-5 different structs, each of which has their own various functions, some mutating, some not.
+* I've included an example in Xcode which you can check out.
 
 <a href='https://learn.co/lessons/StructL' data-visibility='hidden'>View this lesson on Learn.co</a>
