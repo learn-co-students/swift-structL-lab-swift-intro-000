@@ -22,6 +22,7 @@ struct PizzaDeliveryService {
     }
 
     mutating func deliverPizzaTo(destination: Coordinate) -> Bool {
+        guard pizzasAvailable > 0 else { return false }
         guard isInRange(destination) else { return false }
         pizzasAvailable -= 1
         return true

@@ -50,6 +50,13 @@ class PizzaDeliveryServiceSpec: QuickSpec {
                 expect(res).to(beFalse())
                 expect(service.pizzasAvailable).to(equal(10))
             }
+
+            it("returns false if no pizzas are available") {
+                service.pizzasAvailable = 0
+                let dest = Coordinate(latitude: 45.0, longitude: 10.0)
+                let res = service.deliverPizzaTo(dest)
+                expect(res).to(beFalse())
+            }
         }
     }
 }
