@@ -45,6 +45,14 @@ class PersonSpec: QuickSpec {
                 expect(res).to(beFalse())
                 expect(person.isHungry).to(beTrue())
             }
+
+            it("does not consume a pizza if not hungry") {
+                let serviceLoc = Coordinate(latitude: 45.0, longitude: 10.0)
+                let service = PizzaDeliveryService(location: serviceLoc)
+                person.isHungry = false
+                let res = person.eatPizzaFrom(service)
+                expect(res).to(beFalse())
+            }
         }
     }
 }
