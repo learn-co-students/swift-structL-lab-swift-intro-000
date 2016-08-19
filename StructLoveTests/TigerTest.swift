@@ -15,10 +15,10 @@ class TigerSpec: QuickSpec {
         var tiger = Tiger(name: "Bran")
         
         describe("eat()") { 
-            it("Should take in no arguments and return nothing. It should set the isHungry property to false.") {
+            it("should take no arguments and set isHungry to false") {
                 tiger.isHungry = true
                 tiger.eat()
-                expect(tiger.isHungry).to(equal(false))
+                expect(tiger.isHungry).to(beFalse())
             }
         }
     }

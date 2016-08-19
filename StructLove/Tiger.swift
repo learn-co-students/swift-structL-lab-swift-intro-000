@@ -9,7 +9,6 @@
 
 // Incomplete Example
 struct Tiger {
-    
     var name: String
     var isHungry: Bool = true
     
@@ -20,5 +19,4 @@ struct Tiger {
     mutating func eat() {
         isHungry = false
     }
-    
 }
