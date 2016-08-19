@@ -16,7 +16,7 @@ extension Double {
 
 struct Coordinate {
     let latitude: Double
-    let longtitude: Double
+    let longitude: Double
     var isInNorthernHemisphere: Bool {
         return latitude >= 0.0
     }
@@ -24,7 +24,7 @@ struct Coordinate {
         return !isInNorthernHemisphere
     }
     var isInWesternHemisphere: Bool {
-        return longtitude >= 0.0
+        return longitude >= 0.0
     }
     var isInEasternHemisphere: Bool {
         return !isInWesternHemisphere
@@ -34,7 +34,7 @@ struct Coordinate {
         let R = 6371e3
         let φ1 = latitude.radians
         let φ2 = coordinate.latitude.radians
-        let Δλ = (latitude - coordinate.latitude).radians
+        let Δλ = (longitude - coordinate.longitude).radians
         return acos(sin(φ1) * sin(φ2) + cos(φ1) * cos(φ2) * cos(Δλ)) * R / 1000
     }
 }

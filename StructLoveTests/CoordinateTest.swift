@@ -12,8 +12,8 @@ import Nimble
 
 class CoordinateSpec: QuickSpec {
     override func spec() {
-        let coord1 = Coordinate(latitude: 51.0, longtitude: 5.0)
-        let coord2 = Coordinate(latitude: -58.0, longtitude: -9.0)
+        let coord1 = Coordinate(latitude: 51.0, longitude: 5.0)
+        let coord2 = Coordinate(latitude: -58.0, longitude: -9.0)
 
         describe("isInNorthernHemisphere") {
             it("returns true if the coordinate is in the northern hemisphere") {
@@ -45,7 +45,7 @@ class CoordinateSpec: QuickSpec {
 
         describe("distanceTo()") {
             it("should take another coordinate and return the distance between the two") {
-                expect(coord1.distanceTo(coord2)).to(beCloseTo(15583.0337))
+                expect(coord1.distanceTo(coord2)).to(beCloseTo(12187.117))
             }
         }
     }

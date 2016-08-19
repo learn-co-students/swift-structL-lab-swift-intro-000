@@ -12,7 +12,7 @@ import Nimble
 
 class PersonSpec: QuickSpec {
     override func spec() {
-        let home = Coordinate(latitude: 40.0, longtitude: 10.0)
+        let home = Coordinate(latitude: 40.0, longitude: 10.0)
         var person = Person(firstName: "John", lastName: "Doe", home: home)
 
         beforeEach {
@@ -24,14 +24,14 @@ class PersonSpec: QuickSpec {
                 expect(person.firstName).to(equal("John"))
                 expect(person.lastName).to(equal("Doe"))
                 expect(person.home.latitude).to(beCloseTo(40.0))
-                expect(person.home.longtitude).to(beCloseTo(10.0))
+                expect(person.home.longitude).to(beCloseTo(10.0))
                 expect(person.isHungry).to(beTrue())
             }
         }
 
         describe("eatPizzaFrom()") {
             it("consumes a pizza if in range of the pizza delivery service") {
-                let serviceLoc = Coordinate(latitude: 45.0, longtitude: 10.0)
+                let serviceLoc = Coordinate(latitude: 45.0, longitude: 10.0)
                 let service = PizzaDeliveryService(location: serviceLoc)
                 let res = person.eatPizzaFrom(service)
                 expect(res).to(beTrue())
@@ -39,7 +39,7 @@ class PersonSpec: QuickSpec {
             }
 
             it("does not consume a pizza if not in range of the pizza delivery service") {
-                let serviceLoc = Coordinate(latitude: -30.0, longtitude: 10.0)
+                let serviceLoc = Coordinate(latitude: -30.0, longitude: 10.0)
                 let service = PizzaDeliveryService(location: serviceLoc)
                 let res = person.eatPizzaFrom(service)
                 expect(res).to(beFalse())
