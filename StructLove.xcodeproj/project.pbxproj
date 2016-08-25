@@ -13,10 +13,15 @@
 		5BB0BD4C1D4FC02E0054120F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0BD4A1D4FC02E0054120F /* Main.storyboard */; };
 		5BB0BD4E1D4FC02E0054120F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0BD4D1D4FC02E0054120F /* Assets.xcassets */; };
 		5BB0BD511D4FC02E0054120F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0BD4F1D4FC02E0054120F /* LaunchScreen.storyboard */; };
-		5BB0BD5C1D4FC02E0054120F /* StructLoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD5B1D4FC02E0054120F /* StructLoveTests.swift */; };
 		5BB0BD681D4FC4300054120F /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD671D4FC4300054120F /* Tiger.swift */; };
 		5BB0BD6B1D4FC4DC0054120F /* TigerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD6A1D4FC4DC0054120F /* TigerTest.swift */; };
 		AE1703B9A29ECF6AEB0BD9F3 /* Pods_StructLoveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E6C7237B2D98CBE78F9D60 /* Pods_StructLoveTests.framework */; };
+		B73779881D66A93000EAEC1E /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73779871D66A93000EAEC1E /* Coordinate.swift */; };
+		B737798A1D66AB4200EAEC1E /* CoordinateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73779891D66AB4200EAEC1E /* CoordinateTest.swift */; };
+		B7874C731D66B68F00D9671A /* PizzaDeliveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7874C721D66B68F00D9671A /* PizzaDeliveryService.swift */; };
+		B7874C751D66B6D500D9671A /* PizzaDeliveryServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7874C741D66B6D500D9671A /* PizzaDeliveryServiceTest.swift */; };
+		B7874C771D66BC8100D9671A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7874C761D66BC8100D9671A /* Person.swift */; };
+		B7874C791D66BD5D00D9671A /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7874C781D66BD5D00D9671A /* PersonTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,6 @@
 		5BB0BD501D4FC02E0054120F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BB0BD521D4FC02E0054120F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BB0BD571D4FC02E0054120F /* StructLoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StructLoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BB0BD5B1D4FC02E0054120F /* StructLoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructLoveTests.swift; sourceTree = "<group>"; };
 		5BB0BD5D1D4FC02E0054120F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BB0BD671D4FC4300054120F /* Tiger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tiger.swift; sourceTree = "<group>"; };
 		5BB0BD6A1D4FC4DC0054120F /* TigerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TigerTest.swift; sourceTree = "<group>"; };
@@ -48,6 +52,12 @@
 		8A56045F0012FFD8AF7FB3D6 /* Pods-StructLoveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StructLoveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StructLoveTests/Pods-StructLoveTests.release.xcconfig"; sourceTree = "<group>"; };
 		A52F7D6BFC934FFB2BF13C2D /* Pods-StructLoveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StructLoveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StructLoveTests/Pods-StructLoveTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5DB454681F19BC0B6D2E9C8 /* Pods_StructLove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StructLove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73779871D66A93000EAEC1E /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		B73779891D66AB4200EAEC1E /* CoordinateTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinateTest.swift; sourceTree = "<group>"; };
+		B7874C721D66B68F00D9671A /* PizzaDeliveryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaDeliveryService.swift; sourceTree = "<group>"; };
+		B7874C741D66B6D500D9671A /* PizzaDeliveryServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaDeliveryServiceTest.swift; sourceTree = "<group>"; };
+		B7874C761D66BC8100D9671A /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B7874C781D66BD5D00D9671A /* PersonTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +114,11 @@
 		5BB0BD451D4FC02E0054120F /* StructLove */ = {
 			isa = PBXGroup;
 			children = (
-				5BB0BD461D4FC02E0054120F /* AppDelegate.swift */,
-				5BB0BD481D4FC02E0054120F /* ViewController.swift */,
-				5BB0BD4A1D4FC02E0054120F /* Main.storyboard */,
-				5BB0BD661D4FC3EA0054120F /* Supporting Files */,
+				B73779871D66A93000EAEC1E /* Coordinate.swift */,
+				B7874C761D66BC8100D9671A /* Person.swift */,
+				B7874C721D66B68F00D9671A /* PizzaDeliveryService.swift */,
 				5BB0BD671D4FC4300054120F /* Tiger.swift */,
+				5BB0BD661D4FC3EA0054120F /* Supporting Files */,
 			);
 			path = StructLove;
 			sourceTree = "<group>";
@@ -116,6 +126,9 @@
 		5BB0BD5A1D4FC02E0054120F /* StructLoveTests */ = {
 			isa = PBXGroup;
 			children = (
+				B73779891D66AB4200EAEC1E /* CoordinateTest.swift */,
+				B7874C781D66BD5D00D9671A /* PersonTest.swift */,
+				B7874C741D66B6D500D9671A /* PizzaDeliveryServiceTest.swift */,
 				5BB0BD6A1D4FC4DC0054120F /* TigerTest.swift */,
 				5BB0BD691D4FC4C50054120F /* Test Supporting Files */,
 			);
@@ -125,8 +138,11 @@
 		5BB0BD661D4FC3EA0054120F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5BB0BD4D1D4FC02E0054120F /* Assets.xcassets */,
+				5BB0BD461D4FC02E0054120F /* AppDelegate.swift */,
+				5BB0BD481D4FC02E0054120F /* ViewController.swift */,
+				5BB0BD4A1D4FC02E0054120F /* Main.storyboard */,
 				5BB0BD4F1D4FC02E0054120F /* LaunchScreen.storyboard */,
+				5BB0BD4D1D4FC02E0054120F /* Assets.xcassets */,
 				5BB0BD521D4FC02E0054120F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -135,7 +151,6 @@
 		5BB0BD691D4FC4C50054120F /* Test Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5BB0BD5B1D4FC02E0054120F /* StructLoveTests.swift */,
 				5BB0BD5D1D4FC02E0054120F /* Info.plist */,
 			);
 			name = "Test Supporting Files";
@@ -350,9 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7874C771D66BC8100D9671A /* Person.swift in Sources */,
 				5BB0BD491D4FC02E0054120F /* ViewController.swift in Sources */,
 				5BB0BD681D4FC4300054120F /* Tiger.swift in Sources */,
 				5BB0BD471D4FC02E0054120F /* AppDelegate.swift in Sources */,
+				B7874C731D66B68F00D9671A /* PizzaDeliveryService.swift in Sources */,
+				B73779881D66A93000EAEC1E /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +378,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BB0BD5C1D4FC02E0054120F /* StructLoveTests.swift in Sources */,
 				5BB0BD6B1D4FC4DC0054120F /* TigerTest.swift in Sources */,
+				B737798A1D66AB4200EAEC1E /* CoordinateTest.swift in Sources */,
+				B7874C791D66BD5D00D9671A /* PersonTest.swift in Sources */,
+				B7874C751D66B6D500D9671A /* PizzaDeliveryServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

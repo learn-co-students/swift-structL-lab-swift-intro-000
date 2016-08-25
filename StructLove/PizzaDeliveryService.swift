@@ -1,8 +1,8 @@
 //
-//  Tiger.swift
+//  PizzaDeliveryService.swift
 //  StructLove
 //
-//  Created by James Campagno on 8/1/16.
+//  Created by Michael Dippery on 8/18/16.
 //  Copyright © 2016 Flatiron School. All rights reserved.
 //
 
