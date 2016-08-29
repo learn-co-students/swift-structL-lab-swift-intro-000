@@ -1,14 +1,14 @@
-# Struct Love
+# Struct Pizza Delivery Lab 
 
 ![](http://i.imgur.com/5EXsgMl.jpg)  
 
 > My only advice is to stay aware, listen carefully, and yell for help if you need it. -[Judy Blume](https://en.wikipedia.org/wiki/Judy_Blume)
 
-## Learning Objectives
+## Overview
 
-* Complete this lab
+In this lab, you'll impleement a variety of structs and create properties for them. 
 
-## Directions
+## Instructions
 
 This lab will test what you learned about structs in the previous lesson. It will start off pretty easy, but ramp up in difficulty as it goes along.
 
