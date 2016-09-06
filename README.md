@@ -6,7 +6,7 @@
 
 ## Overview
 
-In this lab, you'll impleement a variety of structs and create properties for them. 
+In this lab, you'll implement a variety of structs and create properties for them. 
 
 ## Instructions
 
