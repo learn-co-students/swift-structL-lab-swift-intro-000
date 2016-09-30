@@ -33,7 +33,7 @@ class PersonSpec: QuickSpec {
             it("consumes a pizza if in range of the pizza delivery service") {
                 let serviceLoc = Coordinate(latitude: 45.0, longitude: 10.0)
                 let service = PizzaDeliveryService(location: serviceLoc)
-                let res = person.eatPizzaFrom(service)
+                let res = person.eatPizza(from: service)
                 expect(res).to(beTrue())
                 expect(person.isHungry).to(beFalse())
             }
@@ -41,7 +41,7 @@ class PersonSpec: QuickSpec {
             it("does not consume a pizza if not in range of the pizza delivery service") {
                 let serviceLoc = Coordinate(latitude: -30.0, longitude: 10.0)
                 let service = PizzaDeliveryService(location: serviceLoc)
-                let res = person.eatPizzaFrom(service)
+                let res = person.eatPizza(from: service)
                 expect(res).to(beFalse())
                 expect(person.isHungry).to(beTrue())
             }
@@ -50,7 +50,7 @@ class PersonSpec: QuickSpec {
                 let serviceLoc = Coordinate(latitude: 45.0, longitude: 10.0)
                 let service = PizzaDeliveryService(location: serviceLoc)
                 person.isHungry = false
-                let res = person.eatPizzaFrom(service)
+                let res = person.eatPizza(from: service)
                 expect(res).to(beFalse())
             }
         }

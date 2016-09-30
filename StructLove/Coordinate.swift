@@ -8,6 +8,17 @@
 
 import Foundation
 
+
+
+
+
+
+// Any double type has now the radians computed property available to it thanks to this extension.
+
+// For Example 
+// let number = 5.0
+// number.radians
+
 extension Double {
     var radians: Double {
         return self * M_PI / 180

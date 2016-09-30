@@ -45,7 +45,7 @@ class CoordinateSpec: QuickSpec {
 
         describe("distanceTo()") {
             it("should take another coordinate and return the distance between the two") {
-                expect(coord1.distanceTo(coord2)).to(beCloseTo(12187.117))
+                expect(coord1.distance(to: coord2)).to(beCloseTo(12187.117))
             }
         }
     }
