@@ -42,7 +42,7 @@ The first thing you have to do, though, is create a struct that can represent a 
 3. Create an initializer with two parameters. Both parameters should be of type `Double` labeled as `latitude` and `longitude`. 
 4. Add four _computed_ properties:
 	1. A `Bool` called `isInNorthernHemisphere`. This returns `true` if the coordinate is in the Northern Hemisphere. (A coordinate is in the Northern Hemisphere if its latitude is positive.)
-	2. A `Bool` called `isInSoutherHemisphere`. This returns `true` if the coordinate is in the Souther Hemisphere. (A coordinate is in the Souther Hemisphere if its latitude is negative.)
+	2. A `Bool` called `isInSouthernHemisphere`. This returns `true` if the coordinate is in the Souther Hemisphere. (A coordinate is in the Souther Hemisphere if its latitude is negative.)
 	3. A `Bool` called `isInWesternHemisphere`. This returns `true` if the coordinate is in the Western Hemisphere. (A coordinate is in the Western Hemisphere if its longitude is positive.)
 	4. A `Bool` called `isInEasternHemisphere`. This returns `true` if the coordinate is in the Eastern Hemisphere. (A coordinate is in the Eastern Hemisphere if its longitude is negative.)
 5. Create a method called `distance(to:)`. This method takes one parameter called `coordinate` of type `Coordinate`. `distance(to:)` should return the distance, in kilometers, between the two points. What are the two points? Well.. this function you're implementing is _only_ available to instances of the `Coordinate` struct. So if an instance of the `Coordinate` struct calls on this particular method, we will be passing in _another_ `Coordinate` instance as an argument. So we're left with two `Coordinate` instances which are available to us within our implementation of this function. The `Coordinate` which called on the function--we can access the `latitude` and `longitude` stored properties by typing `latitude` or `longitude`. We can also access these stored properties by typing `self.latitude` or `self.longitude`. The parameter of this function is called `coordinate`. We can access this coordinate's stored properties by typing `coordinate.latitude` or `coordinate.longitude`. 
@@ -77,3 +77,5 @@ Finally, you have to create a `Person` struct, so someone can eat all these pizz
 That's it! Run the tests for this project. If they all pass, you have completed the lab! If not, look back over these directions and try to find and fix what you did wrong. Good luck!
 
 <a href='https://learn.co/lessons/StructL' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-structL-lab'>Swift Struct Pizza Delivery Lab</a> on Learn.co and start learning to code for free.</p>
