@@ -8,7 +8,54 @@
 
 import Foundation
 
-
+struct Coordinate {
+    var latitude: Double
+    var longitude: Double
+    
+    init(latitude: Double, longitude: Double) {
+        self.latitude = latitude
+        self.longitude = longitude
+    }
+    
+    var isInNorthernHemisphere: Bool {
+        if self.latitude >= 0 {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    var isInSouthernHemisphere: Bool {
+        if self.latitude < 0 {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    var isInWesternHemisphere: Bool {
+        if self.longitude >= 0 {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    var isInEasternHemisphere: Bool {
+        if self.longitude < 0 {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    
+    func distance(to: Coordinate) -> Double {
+        let distance = acos(sin(self.latitude.radians) * sin(to.latitude.radians) + cos(self.latitude.radians) * cos(to.latitude.radians) * cos(self.longitude.radians-to.longitude.radians)) * 6371000 / 1000
+        return distance
+    }
+    
+}
 
 
 
