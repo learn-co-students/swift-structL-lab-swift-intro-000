@@ -39,10 +39,11 @@ struct Coordinate {
     }
     
     mutating func distance(to coordinate: Coordinate) -> Double {
-        self.latitude
-        self.longitude
-        
-        return Double // should be coordinate.
+        let r = 6371000.0
+        let lat1 = latitude.radians
+        let lat2 = coordinate.latitude.radians
+        let resultOfLongMinus = (longitude - coordinate.longitude).radians
+        return acos(sin(lat1) * sin(lat2) + cos(lat2) * cos(resultOfLongMinus) * r / 1000)
     }
 }
 
