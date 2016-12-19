@@ -23,7 +23,7 @@ struct PizzaDeliveryService {
     }
     
     mutating func deliverPizza(to destination: Coordinate) -> Bool {
-        if isInRange(to: destination) {
+        if (isInRange(to: destination) && pizzasAvailable > 0) {
             pizzasAvailable = pizzasAvailable - 1
             return true
         } else {
