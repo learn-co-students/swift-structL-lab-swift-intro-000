@@ -12,7 +12,7 @@ import Nimble
 
 class CoordinateSpec: QuickSpec {
     override func spec() {
-        let coord1 = Coordinate(latitude: 51.0, longitude: 5.0)
+        var coord1 = Coordinate(latitude: 51.0, longitude: 5.0)
         let coord2 = Coordinate(latitude: -58.0, longitude: -9.0)
 
         describe("isInNorthernHemisphere") {
