@@ -16,6 +16,8 @@ Tests are included in this lab. When you first open `StructLove.xcworkspace`, yo
 
 Let's get started!
 
+Make sure that you're opening the **StructLove.xcworkspace** file.
+
 ### `Tiger`
 
 Let's start off easy: By implementing a simple struct called `Tiger`. The `Tiger` you implement in this lab is pretty basic: It has a name, and it is either hungry or not hungry, just like tigers in the real world.
