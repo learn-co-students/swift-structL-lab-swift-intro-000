@@ -5,8 +5,8 @@
 //  Created by James Campagno on 8/1/16.
 //  Copyright © 2016 Flatiron School. All rights reserved.
 
-import Quick
-import Nimble
+//import Quick
+//import Nimble
 @testable import StructLove
 
 class TigerSpec: QuickSpec {
