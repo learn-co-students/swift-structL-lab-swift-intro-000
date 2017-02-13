@@ -12,7 +12,7 @@ import Nimble
 
 class PizzaDeliveryServiceSpec: QuickSpec {
     override func spec() {
-        var service = PizzaDeliveryService(location: Coordinate(latitude: 50.0, longitude: 10.0))
+        var service = PizzaDeliveryService(to: Coordinate(latitude: 50.0, longitude: 10.0))
 
         describe("initializer") {
             it("sets the struct's properties") {
