@@ -25,12 +25,12 @@ class PizzaDeliveryServiceSpec: QuickSpec {
         describe("isInRange()") {
             it("returns true if the destination is in range of the service") {
                 let dest = Coordinate(latitude: 45.0, longitude: 10.0)
-                expect(service.isInRange(to: dest)).to(beTrue())
+                expect(service.isInRange(destination: dest)).to(beTrue())
             }
 
             it("returns false if the destination is not in range of the service") {
                 let dest = Coordinate(latitude: -30.0, longitude: 10.0)
-                expect(service.isInRange(to: dest)).to(beFalse())
+                expect(service.isInRange(destination: dest)).to(beFalse())
             }
         }
 
@@ -38,7 +38,7 @@ class PizzaDeliveryServiceSpec: QuickSpec {
             it("returns true and reduces inventory if the destination is in range") {
                 service.pizzasAvailable = 10
                 let dest = Coordinate(latitude: 45.0, longitude: 10.0)
-                let res = service.deliverPizza(to: dest)
+                let res = service.deliverPizzaTo(destination: dest)
                 expect(res).to(beTrue())
                 expect(service.pizzasAvailable).to(equal(9))
             }
@@ -46,7 +46,7 @@ class PizzaDeliveryServiceSpec: QuickSpec {
             it("returns false and does not reduce inventory if the destination is not in range") {
                 service.pizzasAvailable = 10
                 let dest = Coordinate(latitude: -30.0, longitude: 10.0)
-                let res = service.deliverPizza(to: dest)
+                let res = service.deliverPizzaTo(destination: dest)
                 expect(res).to(beFalse())
                 expect(service.pizzasAvailable).to(equal(10))
             }
@@ -54,7 +54,7 @@ class PizzaDeliveryServiceSpec: QuickSpec {
             it("returns false if no pizzas are available") {
                 service.pizzasAvailable = 0
                 let dest = Coordinate(latitude: 45.0, longitude: 10.0)
-                let res = service.deliverPizza(to: dest)
+                let res = service.deliverPizzaTo(destination: dest)
                 expect(res).to(beFalse())
             }
         }
