@@ -16,7 +16,7 @@ class PersonSpec: QuickSpec {
         var person = Person(firstName: "John", lastName: "Doe", home: home)
 
         beforeEach {
-            person = Person(firstName: "John", lastName: "Doe", home: home)
+            person = person(firstName: "John", lastName: "Doe", home: home)
         }
 
         describe("initializer") {
