@@ -7,3 +7,23 @@
 //
 
 import Foundation
+
+struct PizzaDeliveryService {
+    let location : Coordinate
+    var pizzasAvailable : Int
+    
+    init(location: Coordinate) {
+        self.location = location
+        pizzasAvailable = 10
+    }
+    
+    func isInRange(to destination: Coordinate) -> Bool {
+        return location.distance(coordinate: destination) <= 5000    }
+    
+    mutating func deliverPizza( to destination: Coordinate) ->Bool {
+        guard pizzasAvailable > 0 else { return false }
+        guard isInRange(to: destination) else { return false }
+        pizzasAvailable -= 1
+        return true
+    }
+}
