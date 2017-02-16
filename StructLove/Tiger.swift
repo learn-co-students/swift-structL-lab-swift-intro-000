@@ -8,3 +8,17 @@
 
 import Foundation
 
+struct Tiger {
+    var name: String
+    var isHungry: Bool = true
+    
+    init(name: String) {
+        self.name = name
+        //self.isHungry = isHungry
+      
+    }
+    
+    mutating func eat() {
+        isHungry = false
+    }
+}
