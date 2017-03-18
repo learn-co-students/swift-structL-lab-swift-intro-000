@@ -8,3 +8,24 @@
 
 import Foundation
 
+struct Tiger {
+    let name: String
+    var isHungry: Bool = true
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    mutating func eat() {
+        isHungry = false
+    }
+}
+
+/* In the Tiger.swift file, define a struct called Tiger.
+ Add two properties to your Tiger struct:
+ A String property called name
+ A Bool property called isHungry
+ Create an initializer for this struct. This struct should take one parameter of type String called name, and assign that parameter to the appropriate property. isHungry should be true by default. See the note below.
+ Implement a method called eat(). This method takes no parameters. It should change isHungry to false. (Remember how to write a struct method that changes a property?)
+
+ */
