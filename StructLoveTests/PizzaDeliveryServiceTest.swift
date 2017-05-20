@@ -1,4 +1,4 @@
-//
+
 //  PizzaDeliveryServiceTest.swift
 //  StructLove
 //
@@ -25,12 +25,12 @@ class PizzaDeliveryServiceSpec: QuickSpec {
         describe("isInRange()") {
             it("returns true if the destination is in range of the service") {
                 let dest = Coordinate(latitude: 45.0, longitude: 10.0)
-                expect(service.isInRange(to: dest)).to(beTrue())
+                expect(service.isInRange(destination: dest)).to(beTrue())
             }
 
             it("returns false if the destination is not in range of the service") {
                 let dest = Coordinate(latitude: -30.0, longitude: 10.0)
-                expect(service.isInRange(to: dest)).to(beFalse())
+                expect(service.isInRange(destination: dest)).to(beFalse())
             }
         }
 
