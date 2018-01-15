@@ -21,6 +21,6 @@ import Foundation
 
 extension Double {
     var radians: Double {
-        return self * M_PI / 180
+        return self * Double.pi / 180
     }
 }
