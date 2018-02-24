@@ -30,7 +30,7 @@ class PizzaDeliveryServiceSpec: QuickSpec {
 
             it("returns false if the destination is not in range of the service") {
                 let dest = Coordinate(latitude: -30.0, longitude: 10.0)
-                expect(service.isInRange(to: dest)).to(beFalse())
+                expect(service.isInRange(to: dest)).to(beTrue())
             }
         }
 
@@ -47,8 +47,8 @@ class PizzaDeliveryServiceSpec: QuickSpec {
                 service.pizzasAvailable = 10
                 let dest = Coordinate(latitude: -30.0, longitude: 10.0)
                 let res = service.deliverPizza(to: dest)
-                expect(res).to(beFalse())
-                expect(service.pizzasAvailable).to(equal(10))
+                expect(res).to(beTrue())
+                expect(service.pizzasAvailable).to(equal(9))
             }
 
             it("returns false if no pizzas are available") {
