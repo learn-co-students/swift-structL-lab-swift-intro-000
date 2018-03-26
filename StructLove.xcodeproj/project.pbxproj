@@ -16,6 +16,10 @@
 		5BB0BD681D4FC4300054120F /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD671D4FC4300054120F /* Tiger.swift */; };
 		5BB0BD6B1D4FC4DC0054120F /* TigerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD6A1D4FC4DC0054120F /* TigerTest.swift */; };
 		A2633FF2488D93443A235173 /* Pods_StructLoveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18EFF07EEDF944E8D144540 /* Pods_StructLoveTests.framework */; };
+		A502771C2068D54B00A8114F /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD671D4FC4300054120F /* Tiger.swift */; };
+		A502771D2068D54D00A8114F /* PizzaDeliveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7874C721D66B68F00D9671A /* PizzaDeliveryService.swift */; };
+		A502771E2068D55000A8114F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7874C761D66BC8100D9671A /* Person.swift */; };
+		A502771F2068D55300A8114F /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73779871D66A93000EAEC1E /* Coordinate.swift */; };
 		B73779881D66A93000EAEC1E /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73779871D66A93000EAEC1E /* Coordinate.swift */; };
 		B737798A1D66AB4200EAEC1E /* CoordinateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73779891D66AB4200EAEC1E /* CoordinateTest.swift */; };
 		B7874C731D66B68F00D9671A /* PizzaDeliveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7874C721D66B68F00D9671A /* PizzaDeliveryService.swift */; };
@@ -382,8 +386,12 @@
 			files = (
 				5BB0BD6B1D4FC4DC0054120F /* TigerTest.swift in Sources */,
 				B737798A1D66AB4200EAEC1E /* CoordinateTest.swift in Sources */,
+				A502771D2068D54D00A8114F /* PizzaDeliveryService.swift in Sources */,
+				A502771F2068D55300A8114F /* Coordinate.swift in Sources */,
 				B7874C791D66BD5D00D9671A /* PersonTest.swift in Sources */,
+				A502771E2068D55000A8114F /* Person.swift in Sources */,
 				B7874C751D66B6D500D9671A /* PizzaDeliveryServiceTest.swift in Sources */,
+				A502771C2068D54B00A8114F /* Tiger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
