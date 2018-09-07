@@ -8,3 +8,15 @@
 
 import Foundation
 
+struct Tiger {
+    let name: String
+    var isHungry = true
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    mutating func eat() {
+        isHungry = false
+    }
+}

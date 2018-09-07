@@ -32,25 +32,25 @@ class PersonSpec: QuickSpec {
         describe("eatPizzaFrom()") {
             it("consumes a pizza if in range of the pizza delivery service") {
                 let serviceLoc = Coordinate(latitude: 45.0, longitude: 10.0)
-                let service = PizzaDeliveryService(location: serviceLoc)
-                let res = person.eatPizza(from: service)
+                var service = PizzaDeliveryService(location: serviceLoc)
+                let res = person.eatPizza(from: &service)
                 expect(res).to(beTrue())
                 expect(person.isHungry).to(beFalse())
             }
 
             it("does not consume a pizza if not in range of the pizza delivery service") {
                 let serviceLoc = Coordinate(latitude: -30.0, longitude: 10.0)
-                let service = PizzaDeliveryService(location: serviceLoc)
-                let res = person.eatPizza(from: service)
+                var service = PizzaDeliveryService(location: serviceLoc)
+                let res = person.eatPizza(from: &service)
                 expect(res).to(beFalse())
                 expect(person.isHungry).to(beTrue())
             }
 
             it("does not consume a pizza if not hungry") {
                 let serviceLoc = Coordinate(latitude: 45.0, longitude: 10.0)
-                let service = PizzaDeliveryService(location: serviceLoc)
+                var service = PizzaDeliveryService(location: serviceLoc)
                 person.isHungry = false
-                let res = person.eatPizza(from: service)
+                let res = person.eatPizza(from: &service)
                 expect(res).to(beFalse())
             }
         }
