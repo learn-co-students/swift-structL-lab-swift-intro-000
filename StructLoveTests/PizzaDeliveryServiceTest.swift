@@ -18,7 +18,7 @@ class PizzaDeliveryServiceSpec: QuickSpec {
             it("sets the struct's properties") {
                 expect(service.location.latitude).to(beCloseTo(50.0))
                 expect(service.location.longitude).to(beCloseTo(10.0))
-                expect(service.pizzasAvailable).to(equal(10))
+                expect(service.pizzaAvailable).to(equal(10))
             }
         }
 
@@ -36,23 +36,23 @@ class PizzaDeliveryServiceSpec: QuickSpec {
 
         describe("deliverPizzaTo()") {
             it("returns true and reduces inventory if the destination is in range") {
-                service.pizzasAvailable = 10
+                service.pizzaAvailable = 10
                 let dest = Coordinate(latitude: 45.0, longitude: 10.0)
                 let res = service.deliverPizza(to: dest)
                 expect(res).to(beTrue())
-                expect(service.pizzasAvailable).to(equal(9))
+                expect(service.pizzaAvailable).to(equal(9))
             }
 
             it("returns false and does not reduce inventory if the destination is not in range") {
-                service.pizzasAvailable = 10
+                service.pizzaAvailable = 10
                 let dest = Coordinate(latitude: -30.0, longitude: 10.0)
                 let res = service.deliverPizza(to: dest)
                 expect(res).to(beFalse())
-                expect(service.pizzasAvailable).to(equal(10))
+                expect(service.pizzaAvailable).to(equal(10))
             }
 
             it("returns false if no pizzas are available") {
-                service.pizzasAvailable = 0
+                service.pizzaAvailable = 0
                 let dest = Coordinate(latitude: 45.0, longitude: 10.0)
                 let res = service.deliverPizza(to: dest)
                 expect(res).to(beFalse())
